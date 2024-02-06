@@ -17,8 +17,7 @@ def shiftLetter(letter,amt):
     shiftedNum = alphabetNum-amt
     if shiftedNum >=0:
         return chr(ord('`')+ shiftedNum + 1)
-    else:
-        return chr(ord('`')+ ((shiftedNum%25)+1)+1)
+    return chr(ord('`')+ ((shiftedNum%25)+1)+1)
 
 keyResults= open("keyResults.txt","w")
 
